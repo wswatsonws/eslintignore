@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import Home from '../../Components/Home';
+import TopNavbar from '../../Components/TopNavbar';
 
-class List extends Component {
+class Lobby extends Component {
   // Initialize the state
   constructor(props){
     super(props);
@@ -26,6 +28,8 @@ class List extends Component {
 
     return (
       <div className="App">
+        <TopNavbar /><Home />
+       
         <h1>List of Items</h1>
         {/* Check to see if any items are found*/}
         {list.length ? (
@@ -50,4 +54,4 @@ class List extends Component {
   }
 }
 
-export default List;
+export default Lobby;
